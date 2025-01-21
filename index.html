@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODULE 11 final assignment</title>
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+    <table>
+        <caption>Example Student list for CCC</caption>
+        <tr>
+            <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Hobbies</th>
+            </tr>
+            <td>Stinky</td>
+            <td>Pete</td>
+            <td>45</td>
+            <td>Guitar</td>
+        </tr>
+        <tr>
+            <td>Michelle</td>
+            <td>Obama</td>
+            <td>34</td>
+            <td>Singing</td>
+        </tr>
+        <tr>
+            <td>Herbert</td>
+            <td>Jones</td>
+            <td>78</td>
+            <td>Social media</td>
+        </tr>
+        <tr>
+            <td>Peni</td>
+            <td>Parker</td>
+            <td>22</td>
+            <td>Pianist</td>
+        </tr>
+        <tr>
+            <td>Erwin</td>
+            <td>Smith</td>
+            <td>31</td>
+            <td>Kayaking</td>
+        </tr>
+        <tr>
+            <td>Rod</td>
+            <td>Riece</td>
+            <td>75</td>
+            <td>Gardening</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Woods</td>
+            <td>24</td>
+            <td>Hiking</td>
+        </tr>
+        <tr>
+            <td>Kitty</td>
+            <td>Cat</td>
+            <td>13</td>
+            <td>Gaming</td>
+    </table>
+    <label for="enlargeTableButton">Click here to enlarge table until it is completely visible:</label>
+    <button id="enlargeTableButton">Enlarge Table</button>
+    <p>Here is the table in list form</p>
+    <ul id="namelistthing">
+        <li>First and last name: Joe Woods, Age: 24 , Hobby: Gaming</li>
+        <li>First and last name: Rod Riece, Age: 75 , Hobby: Gardening</li>
+        <li>First and last name: Peni Parker, Age: 22 , Hobby: Pianist</li>
+        <li>First and last name: Erwin Smith, Age: 31 , Hobby: Kayaking</li>
+        <li>First and last name: Herbert Jones, Age: 78 , Hobby: Social media</li>
+        <li>First and last name: Michelle Obama, Age: 34 , Hobby: Singing</li>
+        <li>First and last name: Stinky Pete, Age: 45 , Hobby: Guitar</li>
+        <li>First and last name: Kitty Cat, Age: 13 , Hobby: Gaming</li><img src="https://res.cloudinary.com/dbuh4wfsw/image/upload/v1733495199/cat_yfmqxq_c_fill_w_960_h_540_vohfcl.jpg" alt="picture of a white cat looking at the camera" id="catpic"width="120px" height="90px"">
+    </ul>
+    <h1>What is this website for?</h1>
+    <p>This is a example for a website for CCC that lists information for students that would theoretically go to CCC</p>
+    <br>
+    <p> If the info for a student isnt correct, The user can type it below and we will get back to them to fix it</p>
+    <form>
+        <label for="first name">First Name:</label>
+        <input type="text" name="first name" id="first name" placeholder="First name:"/>
+        <label for="last name">Last Name:</label>
+        <input type="text" name="last name" id="last name" placeholder="Last name:"/>
+        <label for="Hobby">Hobby:</label>
+        <input type="text" name="hobby" id="hobby" placeholder="Hobby:"/>
+        <label for="Age">Age:</label>
+        <input type="text" name="Age" id="Age" placeholder="Age:"/>
+    </form>
+    <label for = "sumbitButton">Button to submit your information:</label>
+    <button id = "sumbitButton"> Submit </button>
+    <h2>Some audio and a video to enjoy</h2>
+    <audio controls>
+        <source src="https://res.cloudinary.com/dbuh4wfsw/video/upload/v1734100802/smallStep_m7rmis.mp3" type="audio/mpeg"/>
+    </audio>
+    <video controls>
+        <source src="https://res.cloudinary.com/dbuh4wfsw/video/upload/v1734101000/space_clip_ts7eqz.mp4"/>
+    </video>
+    <script>
+        const enlargeTableButton = document.getElementById('enlargeTableButton');
+        const table = document.querySelector('table');
+            let currentWidth = 32;
+            enlargeTableButton.addEventListener('click', function() {
+                currentWidth += 5;
+                table.style.width = currentWidth + '%'; 
+        });
+    </script>
+</body>
+</html>
