@@ -1,0 +1,42 @@
+table{
+  width:32%;
+  border-collapse: collapse;
+  margin:0 auto;
+}
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+td{
+  border:7px groove #02559d;
+  padding:2px;
+}
+caption{
+  font-size: large;
+}
+th{
+  background-color: white;
+  color: black;
+}
+tr{
+  background-color: white;
+  color:black;
+}
+body{
+  background-color: #CCC;
+}
+#namelistthing{
+  font-weight: bold;
+}
+#catpic{
+  height:"60px";
+  width:"60px";
+}
+li{
+  margin:10px ;
+}
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+#enlargeTableButton{
+  margin:0 auto;
+}
